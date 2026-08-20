@@ -157,8 +157,9 @@
   td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
   tfoot td { font-weight: 800; border-top: 2px solid var(--border); }
 
-  .wrap-table { overflow-x: auto; }
-  table.ref { font-size: 0.82rem; }
+  .wrap-table { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  table.ref { font-size: 0.82rem; min-width: 900px; }
+  table.ref tbody td:first-child { white-space: nowrap; }
   table.ref thead th { position: sticky; top: 0; background: #f8fafc; z-index: 1; }
   table.ref tbody tr { cursor: pointer; }
   table.ref tbody tr:hover { background: #eef2ff; }
