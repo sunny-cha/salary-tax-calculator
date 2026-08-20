@@ -165,6 +165,20 @@
   table.ref tbody tr:hover { background: #eef2ff; }
   table.ref tbody tr.current { background: #eef2ff; outline: 2px solid #c7d2fe; }
 
+  @media (max-width: 640px) {
+    table.ref { min-width: 0; font-size: 0.78rem; }
+    table.ref thead th:nth-child(2),
+    table.ref thead th:nth-child(3),
+    table.ref thead th:nth-child(8),
+    table.ref thead th:nth-child(9),
+    table.ref thead th:nth-child(10),
+    table.ref tbody td:nth-child(2),
+    table.ref tbody td:nth-child(3),
+    table.ref tbody td:nth-child(8),
+    table.ref tbody td:nth-child(9),
+    table.ref tbody td:nth-child(10) { display: none; }
+  }
+
   .note {
     font-size: 0.78rem; color: var(--muted);
     background: #f8fafc;
